@@ -21,6 +21,15 @@ content="Punadsagar Farmers Producer Company Limited - Producer & Marketer">
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
+<!-- Image Lightbox -->
+
+<div id="imagePopup" class="popup">
+
+    <span class="close" onclick="closeImage()">&times;</span>
+
+    <img id="popupImg">
+
+</div>
 
 <body>
 
@@ -356,27 +365,19 @@ and marketing for farmers.
 Gallery
 
 </h2>
-
 <div class="gallery-grid">
 
-<div class="gallery-item">
+    <div class="gallery-item">
+        <img src="images/gallery1.jpg" alt="Gallery Image 1" onclick="openImage(this.src)">
+    </div>
 
-<img src="images/gallery1.jpg" alt="Field Visit">
+    <div class="gallery-item">
+        <img src="images/gallery2.jpg" alt="Gallery Image 2" onclick="openImage(this.src)">
+    </div>
 
-</div>
-
-<div class="gallery-item">
-
-<img src="images/gallery2.jpg" alt="Onion Storage">
-
-</div>
-<div class="gallery-item">
-
-<img src="images/gallery3.jpg" alt="Farm Activity">
-
-</div>
-
-</div>
+    <div class="gallery-item">
+        <img src="images/gallery3.jpg" alt="Gallery Image 3" onclick="openImage(this.src)">
+    </div>
 
 </div>
 

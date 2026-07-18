@@ -108,3 +108,32 @@ item.style.transition=".8s";
 observer.observe(item);
 
 });
+// ==========================
+// IMAGE POPUP
+// ==========================
+
+function openImage(src){
+
+document.getElementById("imagePopup").style.display="flex";
+
+document.getElementById("popupImg").src=src;
+
+}
+
+function closeImage(){
+
+document.getElementById("imagePopup").style.display="none";
+
+}
+
+// Close when clicking outside image
+
+document.getElementById("imagePopup").addEventListener("click",function(e){
+
+if(e.target===this){
+
+closeImage();
+
+}
+
+});
